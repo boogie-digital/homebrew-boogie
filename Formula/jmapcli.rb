@@ -5,8 +5,8 @@
 class Jmapcli < Formula
   desc "JMAP email + calendar client for the command line (by Boogie)"
   homepage "https://boogie.digital/cli/"
-  url "https://boogie.digital/cli/jmapcli-1.7.2.tar.gz"
-  sha256 "63c469890289c353ddd9337d115eb808f8c230f5ba7eac6f4562229cde4b4a0e"
+  url "https://boogie.digital/cli/jmapcli-1.7.3.tar.gz"
+  sha256 "d522cc06b1ca1cb565394a4f967389c09bdb1a3260d8435e1e39032a688ec55f"
   license :cannot_represent # proprietary, binary-only
 
   depends_on arch: :arm64
@@ -17,6 +17,6 @@ class Jmapcli < Formula
   end
 
   test do
-    assert_match "1.7.2", shell_output("#{bin}/jmapcli --version")
+    assert_match "1.7.3", shell_output("#{bin}/jmapcli --version")
   end
 end
