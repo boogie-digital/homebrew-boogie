@@ -1,14 +1,28 @@
-# This tap has moved — use `boogie-digital/boogie`
+# homebrew-boogie
 
-jmapcli is published only from the **boogie-digital** GitHub org (jmapcli DEC-008, 9 November 2026).
+Homebrew tap for [Boogie](https://boogie.digital) command-line tools.
+
+## jmapcli — JMAP from the command line
+
+A fast, native macOS CLI for JMAP and [Stalwart Mail Server](https://stalw.art).
+Send, read, search, sync, and manage mail (and run as an MCP server) from your
+terminal. Credentials live in the macOS Keychain; no telemetry.
 
 ```sh
-brew untap jasonhollis/boogie
 brew install boogie-digital/boogie/jmapcli
 ```
 
-This repository is archived. Its formula is frozen at jmapcli 1.7.1 and will not be updated.
+Homebrew 6+ will not install a raw formula URL. The fully-qualified name taps and trusts only this formula.
 
-- Tap: https://github.com/boogie-digital/homebrew-boogie
-- Releases: https://github.com/boogie-digital/jmapcli/releases
-- Site: https://boogie.digital/cli/
+- Binary-only (closed source); the signed, notarised binary is hosted on
+  `boogie.digital`.
+- Requires macOS on Apple Silicon (`arm64`).
+- Part of [Boogie](https://boogie.digital) — the native Apple JMAP mail +
+  calendar client.
+
+## Updating
+
+```sh
+brew update
+brew upgrade jmapcli
+```
